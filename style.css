@@ -3,8 +3,7 @@
  * Style File
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 *,
 html {
   padding: 0;
@@ -12,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .kam-app {
@@ -29,4 +28,20 @@ body {
 }
 .kam-seperator {
   margin-top: 10px;
+}
+
+/* Tip 1 : Iterate with for...of loop using Symbol.iterator - (Users Example) */
+.usersTable {
+  margin: 15px 0px;
+  padding: 10px;
+}
+.usersTable thead {
+  text-align: left;
+}
+.usersTable,
+.usersTable th,
+.usersTable td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px;
 }
