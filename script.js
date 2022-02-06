@@ -3,7 +3,7 @@
  * Script File
  */
 
-/* Tip 1 : Iterate with for...of loop using Symbol.iterator - (Users Example) */
+/* #1 : Iterate with for...of loop using Symbol.iterator - (Users Example) */
 const usersArr = [
   { name: "Kamal", email: "kamal@gmail.com", status: "Active" },
   { name: "Ilham", email: "ilham@gmail.com", status: "Not active" },
@@ -17,14 +17,19 @@ for (let user of usersArrIterator) {
   const userNameDOM = document.createElement("td");
   const userEmailDOM = document.createElement("td");
   const userStatusDOM = document.createElement("td");
-
   userNameDOM.textContent = user.name;
   userEmailDOM.textContent = user.email;
   userStatusDOM.textContent = user.status;
-
   userRow.appendChild(userNameDOM);
   userRow.appendChild(userEmailDOM);
   userRow.appendChild(userStatusDOM);
-
   usersListDOM.appendChild(userRow);
 }
+
+/* #2 : Case sensivity */
+let hello = "Hello";
+let Hello = "Hello Again";
+let HELLO = "Hello Again !";
+console.log(hello);
+console.log(Hello);
+console.log(HELLO);
