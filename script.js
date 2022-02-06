@@ -26,7 +26,7 @@ for (let user of usersArrIterator) {
   usersListDOM.appendChild(userRow);
 }
 
-/* #2 : Case sensivity */
+/* #2 : Case sensitivity */
 let hello = "Hello";
 let Hello = "Hello Again";
 let HELLO = "Hello Again !";
