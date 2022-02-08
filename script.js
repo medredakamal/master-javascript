@@ -30,6 +30,41 @@ for (let user of usersArrIterator) {
 let hello = "Hello";
 let Hello = "Hello Again";
 let HELLO = "Hello Again !";
-console.log(hello);
-console.log(Hello);
-console.log(HELLO);
+// console.log(hello);
+// console.log(Hello);
+// console.log(HELLO);
+
+/**
+ * #3 : Variables Declaration
+ * Difference between var, let, const
+ */
+
+// let
+console.log(mylet1); // Uncaught Reference Error
+let mylet1;
+
+let mylet2;
+console.log(mylet2); // undefined
+
+let mylet3 = "Hello from let";
+console.log(mylet3) // Hello from let
+
+// var
+var myvar1;
+console.log(myvar1); // undefined
+
+console.log(myvar2)
+var myvar2;
+
+var myvar3 = "Hello from var";
+console.log(myvar3);
+
+// const
+const myconst1;
+console.log(myconst1); // Missing initializer in const
+
+console.log(myconst2); // Missing initializer in const
+const myconst2;
+
+const myconst3 = "Hello from const";
+console.log(myconst3); // Hello from const
